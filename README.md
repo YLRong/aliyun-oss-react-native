@@ -37,6 +37,13 @@ This is a modified version of the official Aliyun oss react native lib.
 
 6. Update **android\build.gradle** in this proj. Keep "compileSdkVersion" and "buildToolsVersion" same with React Native project.
 
+   ```
+   dependencies {
+       implementation 'com.facebook.react:react-native:+'
+       implementation 'com.aliyun.dpa:oss-android-sdk:+'
+   }
+   ```
+
 ------
 
 
