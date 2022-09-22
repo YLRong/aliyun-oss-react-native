@@ -1,6 +1,45 @@
 # Alibaba Cloud OSS SDK for React Native
 
-## [README of Chinese](https://github.com/aliyun/aliyun-oss-react-native/blob/master/README-CN.md)
+## From YLRong
+
+This is a modified version of the official Aliyun oss react native lib.
+
+1. Javascript dependency：
+
+   ```
+   "aliyun-oss-react-native": "git+https://github.com/YLRong/aliyun-oss-react-native"
+   ```
+
+2. For **android\settings.gradle**
+
+   ```
+       include ':aliyun-oss-react-native'
+       project(':aliyun-oss-react-native').projectDir = file('../node_modules/aliyun-oss-react-native/android')
+   ```
+
+   
+
+3. For **android\app\build.gradle**
+
+   ```
+   dependencies {
+   
+       implementation project(':aliyun-oss-react-native')
+       
+   }
+   ```
+
+   
+
+4. For **AndroidManifest.xml**, no need to change
+
+5. For **MainApplication.java**, no need to change
+
+6. Update **android\build.gradle** in this proj. Keep "compileSdkVersion" and "buildToolsVersion" same with React Native project.
+
+------
+
+
 
 ## Introduction
 
